@@ -13,7 +13,8 @@ CREATE TABLE inventory (
     price FLOAT NOT NULL,
     in_stock INTEGER NOT NULL,
     is_favorite BOOLEAN,
-    save_for_later BOOLEAN
+    save_for_later BOOLEAN,
+    cart BOOLEAN
 );
 
 

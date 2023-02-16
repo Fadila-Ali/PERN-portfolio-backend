@@ -24,7 +24,7 @@ const getItem = async (id) => {
 const createItem = async (item) => {
   try {
     const newItem = await db.one(
-      "INSERT INTO inventory (name, img, description, category, price, in_stock, is_favorite, save_for_later) VALUES($1, $2, $3, $4, $5, $6, $7) RETURNING *",
+      "INSERT INTO inventory (name, image, description, category, price, in_stock, is_favorite, save_for_later, cart) VALUES($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING *",
       [
         item.name,
         item.image,
@@ -59,7 +59,7 @@ const deleteItem = async (id) => {
 const updateItem = async (id, item) => {
   try {
     const updatedItem = await db.one(
-      "UPDATE inventory SET name=$1, img=$2, description=$3, category=$4 price=$5, in_stock=$6, is_favorite=$7, save_for_later=$8 WHERE id=$9 RETURNING *",
+      "UPDATE inventory SET name=$1, image=$2, description=$3, category=$4 price=$5, in_stock=$6, is_favorite=$7, save_for_later=$8, cart=$9 WHERE id=$10 RETURNING *",
       [
         item.name,
         item.image,
