@@ -34,6 +34,7 @@ const createItem = async (item) => {
         item.in_stock,
         item.is_favorite,
         item.save_for_later,
+        item.cart
       ]
     );
     return newItem;
@@ -69,6 +70,7 @@ const updateItem = async (id, item) => {
         item.in_stock,
         item.is_favorite,
         item.save_for_later,
+        item.cart,
         id,
       ]
     );
