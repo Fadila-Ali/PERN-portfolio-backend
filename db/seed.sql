@@ -43,4 +43,4 @@ VALUES
 ('18', 'Mr. Mingo', 'So scary', 'The perfect Halloween costume to scary the trick-or-treaters away! I love it', 5),
 ('17', 'Alison', 'So comfortable','I love this costume because it keeps me warm', 5),
 ('29', 'Hannah', 'Insert Confetti Emoji Here', 'I love this costume just like I love Martial Arts!', 4),
-('15', 'Gabi', 'I am Batman', 'I really love this Batman costume!', 5);
+('22', 'Gabi', 'I am Batman', 'My son thinks he is Batman now. hAhahah!', 5);
